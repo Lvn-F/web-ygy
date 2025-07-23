@@ -1,0 +1,882 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    background: hsl(0,0%,95%);
+}
+h1 {
+    font-size: 3.5em;
+    color:hsl(0,0%,20%);
+}
+.headh1 {
+    font-size: 4em;
+}
+h2 {
+    font-size: 2em;
+    line-height: 60px;
+}
+p {
+    font-size: 1em;
+    line-height: 30px;
+    font-weight: 450;
+}
+.subtext {
+    color:hsl(0,0%,20%);
+}
+.bold {
+    font-weight: 620;
+}
+/**/
+/* button */
+button {
+    position: relative;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    color: hsl(0,100%,100%);
+    background:hsl(120,0%,20%);
+    cursor: pointer;
+    border: none;
+    z-index: 0;
+    transition: 200ms ease-in-out;
+}
+button::after {
+    content: '';
+    height: 0;
+    width: 0%;
+    border-radius: 8px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition: 200ms ease-in-out;
+    background-position: cover;
+}
+button:hover {
+    transform: scale(1.05);
+    background-color: hsl(120, 100%, 30%);
+    font-size: 0.85em;
+}
+button:active {
+    transform: scale(0.95);
+    background:hsl(120,0%,20%);
+}
+
+/* Nav */
+
+.navbutton {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(120, 60%, 40%);
+    box-shadow: 0 0 16px hsl(0,0%,10%);
+    position: fixed;
+    top:5%;
+    right: 2%;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+    transition: all 0.3s ease-out;
+
+    z-index: 5;
+}
+.navbutton:hover {
+    background-color: hsl(120, 100%, 30%);
+    scale: 1.1;
+}
+.navbutton:active {
+    scale:0.9;
+}
+.strip {
+    height: 0.3vh;
+    width: 3vh;
+    background-color: hsl(0,0%,15%);
+}
+.navback {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(120, 0%, 20%);
+    top:5%;
+    right: 10%;
+    position: absolute;
+    border-radius: 50%;
+
+    transition: all 0.3s ease-out;
+
+}
+.navback:hover {
+    background-color: hsl(120, 100%, 30%);
+    scale: 1.1;
+}
+.navback:active {
+    scale:0.9;
+}
+
+.navcard {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: hsl(120,100%,20%);
+
+    transition: all 0.3s ease-out;
+    
+    transform: translateX(100%);
+    z-index: 100;
+}
+.navcard.show {
+    transform: translateX(0);
+}
+
+
+
+.navlist {
+    margin-top: 6rem;
+    position: absolute;
+}
+.navitem {
+    list-style: none;
+    padding: 1rem 2rem;
+    color: hsl(0,0%,100%);
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+}
+a {
+    text-decoration: none;
+    color: hsl(0,0%,100%);
+    transition: all 0.3s ease-out;
+}
+a:hover {
+    color: hsl(120, 100%, 30%);
+}
+/**/
+
+#whitecolor {
+    color:hsl(0,0%,10%);
+}
+#whitecolor:hover {
+    color:hsl(120, 100%, 22%);
+}
+#white {
+    color:hsl(120, 80%, 70%);
+    text-shadow: 2px 2px 8px hsl(0,0%,5%);
+}
+.page1Header {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:500px;
+
+    background-image: url(assets/greentech-head.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.p1HeadText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**/
+
+.p1Sect1 {
+    margin:2rem 0rem;
+    height:100%;
+    padding: 2rem 0rem 4rem 0rem;
+    
+}
+.card1p1 {
+    margin:0rem auto;
+    width: 80%;
+    
+    padding:2rem;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:16px;
+    
+}
+.p1img1 {
+    width:220px;
+    height:220px;
+    background-color: hsl(35,80%,40%);
+    min-width: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+span {
+    font-weight: bold;
+    color: hsl(120, 100%, 20%);
+}
+#heheheh {
+    text-align: start;
+}
+.textbox1 {
+    max-width: 45rem;
+}
+.textbox1 h2 {
+    margin-bottom: 1rem;
+    color : hsl(120, 100%, 20%);
+}
+
+/**/
+
+/* Slide */
+
+.innovationContainer {
+    position: relative;
+    width: 90%;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 16px;
+    margin: 8rem auto;
+}
+.slideInnovation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    background: linear-gradient(135deg, hsl(240, 62%, 64%) 0%, hsl(120, 51%, 64%) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0;
+}
+.slideInnovation.Active {
+    opacity: 1;
+}
+.slideInnovation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: 1;
+}
+.slideInnovation:nth-child(1)::before {
+    background-image: url('assets/solarpanel.jpg');
+}
+
+.slideInnovation:nth-child(2)::before {
+    background-image: url('assets/vehicle.jpg');
+}
+
+.slideInnovation:nth-child(3)::before {
+    background-image: url('assets/led.jpg');
+}
+.slideContent {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+.textBoxSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-right: 2rem;
+}
+.slideTitle {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 8px hsl(0,0%,5%);
+    line-height: 0.9;
+    color: hsl(120, 60%, 70%);
+}
+.slideDesc {
+    font-size: 1.3em;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 3px hsl(0,0%,5%);
+    max-width: 600px;
+}
+.imgSlideContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.innovationImg {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0 25px 50px hsl(0,0%,5%);
+    margin-bottom: 2rem;
+    aspect-ratio: 16/9;
+}
+.thumbnailContainer {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+    gap: 1.5rem;
+    z-index: 10;
+    background-color: hsl(0,0%,5%);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+.Thumbnail {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    border: 3px solid transparent;
+    position: relative;
+}
+.Thumbnail:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+.Thumbnail.active {
+    opacity: 1;
+    border-color: white;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+    /* History */
+
+.history {
+    display: flex;
+    width: 90%;
+    margin:0rem auto 0rem auto;
+    flex-direction: column;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    
+
+    font-weight: 450;
+}
+
+#h2his {
+    color: hsl(120, 100%, 20%);
+    text-align: center;
+    margin: 0rem auto;
+}
+.boxhis {
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.textboxhis {
+    max-width: 80%;
+    margin-top: 5rem;
+}
+.imgboxhis {
+    width: 450px;
+    height: 400px;
+    background-image: url(assets/history.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+
+    align-self: center;
+    justify-self: center;
+    transform: translateY(10%);
+}
+
+    /* Benefits */
+
+.benefit {
+    width:85%;
+    margin:3rem auto;
+    padding-top: 2rem;
+}
+.benefit h2 {
+    text-align: center;
+    margin:3rem 0;
+    color: hsl(120, 100%, 20%);
+}
+.benefit p {
+    margin:0.8rem;
+    color: hsl(0,0%,20%);
+    text-align: center;
+}
+.benefit h3 {
+    margin:1.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+    color: hsl(120, 100%, 20%);
+}
+
+.benrow {
+    display: flex;
+    gap:1rem;
+}
+.bencard {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.8fr;
+    background-color: hsl(0,0%,90%);
+    padding: 1rem;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.benimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    
+}
+.environmental {
+    background-image: url(assets/environmentall.png);
+    background-size: cover;
+    background-position: center;
+}
+.energy {
+    background-image: url(assets/energy.png);
+    background-size: cover;
+    background-position: center;
+}
+.economic {
+    background-image: url(assets/economic.png);
+    background-size: cover;
+    background-position: center;
+}
+.health {
+    background-image: url(assets/QoL.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Technology */
+
+
+
+/**/
+.teknologi {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+.teknologi h2 {
+    color: hsl(120, 100%, 20%);
+}
+.techsection {
+    display: grid;
+    
+}
+.sect1 {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.sect2 {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.sect3 {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.sect4 {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.sect5 {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.sect6 {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.titletech {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-bottom: 3rem;
+}
+.titletech h2 {
+    margin-bottom: 1.2rem;
+}
+.techtext {
+    margin-left: 1rem;
+}
+.techtext h3 {
+    color: hsl(120, 100%, 20%);
+    margin-bottom: 0.8rem;
+}
+.techsegment {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 4rem;
+}
+.techpic {
+    width: 100%;
+    height: 250px;
+}
+.solarenergy {
+    background-image: url(assets/solarpanel.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.wind {
+    background-image: url(assets/wind.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.hydropower {
+    background-image: url(assets/hydro.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.geothermal {
+    background-image: url(assets/geo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.battery {
+    background-image: url(assets/battery.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.hydrogen {
+    background-image: url(assets/hydrogen.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.waste {
+    background-image: url(assets/waste.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.compost {
+    background-image: url(assets/compost.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.evehicle {
+    background-image: url(assets/vehicle.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.ebike {
+    background-image: url(assets/ebike.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.rainwater {
+    background-image: url(assets/rainwater.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.desalination {
+    background-image: url(assets/desalination.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.solarpurify {
+    background-image: url(assets/solarwater.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.hydroponics {
+    background-image: url(assets/hydroponics.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.irrigation {
+    background-image: url(assets/irrigation.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.organic {
+    background-image: url(assets/organic.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+
+/**/
+.footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    
+}
+.footerGrid h3 {
+    color: hsl(120, 100%, 20%);
+}
+.gridEach {
+    margin:0 auto;
+}
+
+footer {
+    background-color: hsl(0,0%,90%);
+    padding:3.5rem 0;
+}
+
+/**/
+@media (max-width:1100px) and (min-width: 741px) {
+    
+}
+
+@media (max-width:780px) {
+    .p1HeadText {
+        width:80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .p1HeadText h2 {
+        margin-top: 1rem;
+        font-size: 1.3em;
+    }
+    /**/
+    .navcard {
+        width: 50%;
+    }
+    /**/
+    .card1p1 {
+        flex-direction: column-reverse;
+        width: 85%;
+    }
+    .card1p1 h2 {
+        margin: 1rem 0;
+    }
+    .card2p1 {
+        flex-direction: column;
+    }
+    /**/
+    .p1cardcontainer {
+        flex-direction: column;
+    }
+    .p1card {
+        margin: 2rem 0;
+        width: 600px;
+    }
+    /**/
+    .slideContent {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+    .slideDesc {
+        font-size: 1.1em;
+        max-width: 600px;
+    }
+    .innovationImg {
+        width: 100%;
+        max-width: 500px;
+        height: 250px;
+        margin-bottom: 9rem;
+    }
+    /**/
+    .history {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .boxhis {
+        flex-direction: column-reverse;
+    }
+    .textboxhis {
+        max-width: 90%;
+        align-items: center;
+
+    }
+    .imgboxhis {
+        width: 350px;
+        height: 350px;
+    }
+    /**/
+    .benefit {
+        width: 90%;
+    }
+    .benrow {
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+        margin: 0 0 1rem 0;
+    }
+    .bencard {
+        max-width: 80%;
+        min-width: 70%;
+        padding: 1rem;
+    }
+    /**/
+    .teknology {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .techsegment {
+        display: grid;
+        grid-template-rows: 1fr 0.5fr;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        margin-bottom:3rem;
+    }
+    .techpic {
+        width: 100%;
+        height: 200px;
+    }
+    .techsection {
+        margin-bottom: 4rem;
+    }
+    .titletech {
+        margin-bottom: 0;
+    }
+}
