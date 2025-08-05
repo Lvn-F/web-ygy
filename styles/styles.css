@@ -68,15 +68,12 @@ button:active {
 /* Nav */
 
 .navbutton {
+    position: absolute;
     width: 50px;
     height: 50px;
-    background-color: hsl(120, 60%, 40%);
-    box-shadow: 0 0 16px hsl(0,0%,10%);
-    position: fixed;
-    top:5%;
-    right: 2%;
-    border-radius: 50%;
-
+    background-color: hsl(120, 100%, 20%);
+    opacity: 0.7;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,11 +123,12 @@ button:active {
     width: 100%;
     height: 10%;
     
-
+    display: flex;
     transition: all 0.3s ease-out;
     
-    
+    background-color: hsl(120, 100%, 20%);
     z-index: 100;
+    opacity: 0.7;
 }
 .navcard.show {
     transform: translateX(0);
@@ -139,14 +137,14 @@ button:active {
 
 
 .navlist {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: end;
-    background-color: hsl(120, 100%, 20%);
+    
     margin: 0 auto;
     width: 100%;
-    opacity: 0.7;
+    
 }
 .navitem {
     list-style: none;
@@ -415,8 +413,25 @@ span {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
-
-
+.slideButton {
+    padding: 0.8rem 1.6rem;
+    background-color: hsl(120, 100%, 20%);
+    border-radius: 8px;
+    box-shadow: 0 0 16px hsla(0,0%,10%, 0.9);
+    transition: all 0.3s ease;
+}
+.slideButton:hover {
+    scale: 1.09;
+    background-color: hsl(120, 100%, 30%);
+}
+.slideButton:active {
+    scale: 0.9;
+}
+#sliderh2 {
+    color: hsl(120, 100%, 20%);
+    font-size: 2.5em;
+    text-align: center;
+}
     /* History */
 
 .history {
