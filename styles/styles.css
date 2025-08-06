@@ -556,9 +556,6 @@ span {
 
 /* Technology */
 
-
-
-/**/
 .teknologi {
     width: 80%;
     margin: 0 auto;
@@ -781,7 +778,7 @@ span {
 }
 
 
-/**/
+/* Footer */
 .footerGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
