@@ -35,13 +35,14 @@ p {
 button {
     position: relative;
     padding: 1rem 3rem;
-    border-radius: 8px;
-    color: hsl(0,100%,100%);
-    background:hsl(120,0%,20%);
+    border-radius: 12px;
+    color: hsl(120, 100%, 30%);
+    background:hsl(120,0%,80%);
     cursor: pointer;
     border: none;
     z-index: 0;
     transition: 200ms ease-in-out;
+    font-size: 0.9em;
 }
 button::after {
     content: '';
@@ -56,9 +57,7 @@ button::after {
     background-position: cover;
 }
 button:hover {
-    transform: scale(1.05);
-    background-color: hsl(120, 100%, 30%);
-    font-size: 0.85em;
+    background-color: hsl(120, 60%, 70%);
 }
 button:active {
     transform: scale(0.95);
@@ -173,16 +172,15 @@ a:hover {
     color:hsl(120, 100%, 22%);
 }
 #white {
-    color:hsl(120, 84%, 33%);
+    color:hsl(120, 45%, 85%);
     text-shadow: 2px 2px 8px hsl(0,0%,5%);
+    text-align: justify;
 }
 .page1Header {
-    padding-top: 7rem;
-    padding-bottom: 4rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height:500px;
+    justify-content: start;
+    
 
     background-image: url(assets/greentech-head.jpg);
     background-position: center;
@@ -190,10 +188,23 @@ a:hover {
     height: 100vh;
 }
 .p1HeadText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 8rem;
+    margin: 0 auto;
+}
+.p1HeadText p {
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+}
+.headimg {
+    height: 350px;
+    width: 500px;
+    background-color: hsl(120, 60%, 70%);
+    border-radius: 16px;
 }
 
 /**/
@@ -489,7 +500,7 @@ span {
     width: 100%;
     height: 550px;
     background-color: green;
-    margin:  80px 0 0 0 ;
+    
 }
 
 .title-benefit {
