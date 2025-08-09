@@ -1,0 +1,8 @@
+.news {
+    margin: 7rem auto;
+    width: 80%;
+}
+.newsContent p {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
