@@ -6,6 +6,7 @@
 body {
     font-family: 'poppins', sans-serif;
     background: hsl(0,0%,95%);
+    height: 100%;
 }
 h1 {
     font-size: 3.5em;
@@ -153,7 +154,7 @@ button:active {
     transition: all 0.3s ease-out;
 }
 .navitem:hover {
-    scale: 1.2;
+    letter-spacing: 0.5px;
 }
 a {
     text-decoration: none;
@@ -538,6 +539,21 @@ span {
 .card-items-benefit h4 {
     padding: 20px 0;
 }
+
+.card-items-benefit:nth-child(1) {
+    margin-top: 30px;
+}
+
+.card-items-benefit:nth-child(4) {
+    margin-top: 30px;
+}
+
+.card-items-benefit:hover {
+    transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
 /* BENEFIT END CSS */
 
 
@@ -771,6 +787,8 @@ footer {
     width: 100%;
     height: 280px;
     background-color: green; 
+
+    position: relative;
 }
 
 .container-footer {
@@ -832,6 +850,7 @@ footer p {
   transition: color 0.3s ease;
   text-decoration: none;
 }
+
 
 /*FOOTER END*/
 
