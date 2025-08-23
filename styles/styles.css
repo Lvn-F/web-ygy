@@ -530,6 +530,7 @@ span {
     height: 290px;
     background-color: white;
     border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-items-benefit img {
@@ -539,6 +540,19 @@ span {
 
 .card-items-benefit h4 {
     padding: 20px 0;
+}
+
+.card-items-benefit:nth-child(1) {
+    margin-top: 35px;
+}
+
+.card-items-benefit:nth-child(4) {
+    margin-top: 35px;
+}
+
+.card-items-benefit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2); 
 }
 
 /* BENEFIT END CSS */
