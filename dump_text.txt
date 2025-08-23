@@ -1,0 +1,25 @@
+nav.addEventListener('click', () => {
+    navCards.forEach(navcard => {
+        navcard.classList.add('show');
+        navcard.classList.remove('hidden');
+    });
+});
+navback.addEventListener('click', () => {
+    navCards.forEach(navcard => {
+        navcard.classList.remove('show');
+        navcard.classList.add('hidden');
+    });
+});
+
+
+            <div class="card1p1">
+                <div class="textbox1">
+                    <h2>What is Greentech ?</h2>
+                    <p id="heheheh">
+                        <span>Green Technology</span> is a branch of technology that focuses on the development and application 
+                        of products, systems and processes that use resources efficiently, 
+                        produce minimal environmental impact, promote long-term sustainability, reduce greenhouse gas emissions and pollution.
+                    </p>
+                </div>
+                <div class="p1img1"></div>
+            </div>
