@@ -55,3 +55,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const judulBenefit = document.querySelectorAll(".title-benefit h3, .title-benefit p");
+const kartuBenefit = document.querySelectorAll(".card-items-benefit");
+
+const pengamatScroll = new IntersectionObserver(daftarElemen => {
+    daftarElemen.forEach(elemen => {
+        if (elemen.isIntersecting) {
+            elemen.target.classList.add("show"); 
+        } 
+    });
+}, { threshold: 0.4 }); 
+
+judulBenefit.forEach(teks => pengamatScroll.observe(teks));
+kartuBenefit.forEach(kartu => pengamatScroll.observe(kartu));
+
+
+const teksTechnology = document.querySelectorAll(".techTextBox h2, .techTextBox p");
+
+const pengamatTechnology = new IntersectionObserver(daftarElemen => {
+    daftarElemen.forEach(elemen => {
+        if (elemen.isIntersecting) {
+            elemen.target.classList.add("muncul"); 
+        } 
+    });
+}, { threshold: 0.3 }); 
+
+teksTechnology.forEach(teks => pengamatTechnology.observe(teks));
