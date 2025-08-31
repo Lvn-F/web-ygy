@@ -1,14 +1,14 @@
 /* Topic Slider */
 let CurrentSlide = 0;
-const innovationSlide = document.querySelectorAll('.slideInnovation');
+const newssSlide = document.querySelectorAll('.slideNewss');
 const thumbnails = document.querySelectorAll('.Thumbnail');
-const totalSlides = innovationSlide.length;
+const totalSlides = newssSlide.length;
 
 function updateTopicSlider() {
-    innovationSlide.forEach(slideInnovation => slideInnovation.classList.remove('Active'));
+    newssSlide.forEach(slideNewss => slideNewss.classList.remove('Active'));
     thumbnails.forEach(Thumbnail => Thumbnail.classList.remove('Active'));
 
-    innovationSlide[CurrentSlide].classList.add('Active');
+    newssSlide[CurrentSlide].classList.add('Active');
     thumbnails[CurrentSlide].classList.add('Active');
 }
 

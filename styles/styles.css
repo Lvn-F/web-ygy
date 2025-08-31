@@ -164,6 +164,7 @@ button:active {
 a:hover {
     color: hsl(120, 100%, 30%);
 }
+
 /**/
 
 #whitecolor {
@@ -173,8 +174,7 @@ a:hover {
     color:hsl(120, 100%, 22%);
 }
 #white {
-    color:hsl(120, 45%, 85%);
-    text-shadow: 2px 2px 8px hsl(0,0%,5%);
+    color:hsl(120, 100%, 30%);
     text-align: justify;
 }
 .page1Header {
@@ -194,7 +194,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 80%;
-    gap: 8rem;
+    gap: 5rem;
     margin: 0 auto;
 }
 .p1HeadText p {
@@ -202,10 +202,20 @@ a:hover {
     margin-bottom: 1rem;
 }
 .headimg {
-    height: 350px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     background-color: hsl(120, 60%, 70%);
     border-radius: 16px;
+    background-image: url(assets/icon2.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 4rem;
+}
+.thinLine {
+    height: 3px;
+    width: 85%;
+    background-color: hsl(120, 100%, 30%);
+    margin: 0 auto;
 }
 
 /**/
@@ -250,6 +260,7 @@ span {
 }
 #heheheh {
     text-align: start;
+    color: hsl(0,0%,20%);
 }
 .textbox1 {
     max-width: 45rem;
@@ -261,17 +272,17 @@ span {
 
 /**/
 
-/* Slide */
+/* Slide for news */
 
-.innovationContainer {
+.newssContainer {
     position: relative;
     width: 90%;
-    height: 100vh;
+    height: 85vh;
     overflow: hidden;
     border-radius: 16px;
-    margin: 8rem auto;
+    margin: 3rem auto;
 }
-.slideInnovation {
+.slideNewss {
     position: absolute;
     top: 0;
     left: 0;
@@ -290,10 +301,10 @@ span {
     color: #fff;
     padding: 0;
 }
-.slideInnovation.Active {
+.slideNewss.Active {
     opacity: 1;
 }
-.slideInnovation::before {
+.slideNewss::before {
     content: '';
     position: absolute;
     top: 0;
@@ -305,16 +316,12 @@ span {
     opacity: 0.4;
     z-index: 1;
 }
-.slideInnovation:nth-child(1)::before {
-    background-image: url('assets/solarpanel.jpg');
+.slideNewss:nth-child(1)::before {
+    background-image: url('assets/test2.jpeg');
 }
 
-.slideInnovation:nth-child(2)::before {
-    background-image: url('assets/vehicle.jpg');
-}
-
-.slideInnovation:nth-child(3)::before {
-    background-image: url('assets/led.jpg');
+.slideNewss:nth-child(2)::before {
+    background-image: url('assets/test.png');
 }
 .slideContent {
     position: relative;
@@ -357,7 +364,7 @@ span {
     justify-content: center;
     position: relative;
 }
-.innovationImg {
+.newssImg {
     width: 100%;
     max-width: 500px;
     height: 350px;
@@ -443,57 +450,9 @@ span {
     color: hsl(120, 100%, 20%);
     font-size: 2.5em;
     text-align: center;
-}
-    /* History */
-
-.history {
-    display: flex;
-    width: 90%;
-    margin:0rem auto 0rem auto;
-    flex-direction: column;
-
-    display: grid;
-    grid-template-columns: 60% 40%;
-    justify-content: center;
-    
-
-    font-weight: 450;
+    margin-top: 8rem;
 }
 
-#h2his {
-    color: hsl(120, 100%, 20%);
-    text-align: center;
-    margin: 0rem auto;
-}
-.boxhis {
-    display: flex;
-    justify-content: center;
-    gap:2rem;
-}
-.textboxhis {
-    max-width: 80%;
-    margin: 5rem auto;
-
-}
-.textboxhis p {
-    text-align: justify;
-}
-.imgboxhis {
-    width: 450px;
-    height: 400px;
-    background-image: url(assets/history.webp);
-    background-size: cover;
-    background-position: center;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-
-    align-self: center;
-    justify-self: center;
-    transform: translateY(10%);
-}
 
 
 /* BENEFIT START CSS */

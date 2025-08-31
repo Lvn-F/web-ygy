@@ -522,3 +522,54 @@ navback.addEventListener('click', () => {
                 <div class="imgboxhis"></div>
             </div>
         </section>
+
+    /* History */
+
+.history {
+    display: flex;
+    width: 90%;
+    margin:0rem auto 0rem auto;
+    flex-direction: column;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    
+
+    font-weight: 450;
+}
+
+#h2his {
+    color: hsl(120, 100%, 20%);
+    text-align: center;
+    margin: 0rem auto;
+}
+.boxhis {
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.textboxhis {
+    max-width: 80%;
+    margin: 5rem auto;
+
+}
+.textboxhis p {
+    text-align: justify;
+}
+.imgboxhis {
+    width: 450px;
+    height: 400px;
+    background-image: url(assets/history.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+
+    align-self: center;
+    justify-self: center;
+    transform: translateY(10%);
+}

@@ -13,7 +13,7 @@
     z-index: 10;
     top: 0;
 
-    border: 5px none hsl(0, 0%, 20%);
+    border: 2px none hsl(0, 0%, 20%);
     border-style: none none solid none;
 }
 .nav-left {
@@ -74,8 +74,8 @@
     top:5rem;
 }
 .news {
-    margin: 7rem 0rem 3rem 15rem;
-    width: 80%;
+    margin: 7rem auto;
+    width: 85%;
 
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
 .news-head {
     height: 500px;
     width: 100%;
-    background-image: url(assets/test.png);
+    background-image: url(assets/test2.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
@@ -95,4 +95,7 @@
 }
 .newsContent #p {
     margin-bottom: 1.5rem;
+}
+.newsContent li {
+    margin-left: 2rem;
 }
