@@ -499,3 +499,26 @@ navback.addEventListener('click', () => {
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
 } 
+
+
+
+        <section>
+            <h2 id="h2his">Greentech History</h2>
+            <div class="history">
+                <div class="boxhis">
+                    <div class="textboxhis">
+                        <p>
+                            Greentech, or green technology, has evolved from early conservation ideas in the 1800s to a 
+                            global movement for sustainable innovation. Sparked by rising awareness of environmental damage during the 
+                            Industrial Revolution and amplified by events like the 1970 Earth Day and Rachel Carson's Silent Spring, the 
+                            movement gained momentum with policies like the Clean Air Act and institutions like the EPA. In the late 20th century, 
+                            renewable energy, green architecture, and recycling emerged, leading to the modern greentech era marked by solar, wind, 
+                            electric vehicles, and smart infrastructure. Key global agreements like the Kyoto Protocol and Paris Agreement drove cooperation, 
+                            while recent advances such as AI for climate, 
+                            green hydrogen, and circular economy practices are shaping a net-zero future
+                        </p>
+                    </div>
+                </div>
+                <div class="imgboxhis"></div>
+            </div>
+        </section>
