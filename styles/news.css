@@ -89,7 +89,10 @@
     border-radius: 4px;
     margin-bottom: 3rem;
 }
-.newsContent p {
-    margin-bottom: 2rem;
-    text-align: justify;
+.newsContent p, .newsContent li {
+    line-height: 1.9rem;
+    font-weight: 480;
+}
+.newsContent #p {
+    margin-bottom: 1.5rem;
 }
