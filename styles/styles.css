@@ -186,7 +186,7 @@ a:hover {
     background-image: url(assets/greentech-head.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 95vh;
 }
 .p1HeadText {
     display: grid;
