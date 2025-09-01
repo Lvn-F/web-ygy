@@ -462,20 +462,25 @@ span {
     padding: 40px 20px;
 }
 
+/* --- Aturan Dasar (untuk desktop) --- */
 .title-benefit {
     text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-benefit h3 {
+    font-size: 20px;
     color: white;
-    padding: 20px;
 }
 
 .title-benefit p {
-    width: 40%;          
-    margin: 10px auto 0; 
-    text-align: center;  
-    line-height: 1.6; 
-    padding-top:  30px;
-    font-size:  13px;
-    color:  #B0B0B0;   
+    font-size: 13px;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    /* --- Kode baru untuk membuat teks melebar --- */
+    word-spacing: 2px; /* Menambah jarak antar kata */
+   /* Menambah jarak antar huruf */
+   color: #C5C5C5;
 }
 
 .box-card-benefit {
@@ -546,6 +551,11 @@ span {
   .card-items-benefit {
       padding: 18px;
   }
+  .title-benefit p {
+        font-size: 13px;
+        word-spacing: 1.5px;
+        letter-spacing: 0.3px; 
+    }
 }
 
 @media (max-width: 768px) {
@@ -561,6 +571,21 @@ span {
   .card-items-benefit img {
       width: 60px;
   }
+  .title-benefit {
+        margin-bottom: 20px;
+    }
+    
+    .title-benefit h3 {
+        font-size: 24px;
+    }
+
+    .title-benefit p {
+        font-size: 13px;
+        padding: 0 15px;
+        word-spacing: 1px; 
+        letter-spacing: 0.2px; 
+    }
+
 }
 
 /* BENEFIT END CSS */
@@ -646,10 +671,11 @@ span {
 
 footer {
     width: 100%;
-    height: 280px;
+    height: auto; 
     background-color: white; 
     position: relative;
     border-top: 1px solid green;
+    padding-bottom: 20px; 
 }
 
 .container-footer {
@@ -660,6 +686,7 @@ footer {
     gap: 25px;
     max-width: 1200px;
     margin: auto;
+    flex-wrap: wrap; 
 }
 
 .box-text-order1 {
@@ -688,7 +715,7 @@ footer p {
 }
 .social-icons {
   color: green;
-  margin-top: 20px;
+  margin-top: 0; 
 }
 
 .title-icons h2 {
@@ -710,6 +737,57 @@ footer p {
   margin-right: 15px;
   transition: color 0.3s ease;
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .container-footer {
+        padding: 30px 20px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 20px;
+        gap: 30px; 
+    }
+    
+    .social-icons,
+    .box-text-order1 {
+        text-align: center; 
+    }
+
+    .text-icons p {
+        max-width: 100%; 
+    }
+
+    .social-icons a {
+        margin: 0 10px; 
+    }
+
+    .box-text-order1 p {
+        font-size: 14px; 
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-footer {
+        padding: 15px;
+    }
+    
+    .social-icons a {
+        font-size: 20px; 
+        margin: 0 8px;
+    }
 }
 
 
