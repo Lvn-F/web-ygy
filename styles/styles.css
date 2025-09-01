@@ -469,7 +469,13 @@ span {
 }
 
 .title-benefit p {
-    padding-top: 10px;
+    width: 40%;          
+    margin: 10px auto 0; 
+    text-align: center;  
+    line-height: 1.6; 
+    padding-top:  30px;
+    font-size:  13px;
+    color:  #B0B0B0;   
 }
 
 .box-card-benefit {
@@ -478,7 +484,7 @@ span {
     gap: 50px;
     max-width: 1100px;
     margin: auto;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -641,9 +647,9 @@ span {
 footer {
     width: 100%;
     height: 280px;
-    background-color: green; 
-
+    background-color: white; 
     position: relative;
+    border-top: 1px solid green;
 }
 
 .container-footer {
@@ -657,7 +663,7 @@ footer {
 }
 
 .box-text-order1 {
-  color: white;
+  color: black;
 }
 
 .box-text-order1 p {
@@ -671,35 +677,35 @@ footer {
 footer h2 {
   font-size: 16px;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: green ;
 }
 
 footer p {
   font-size: 12px;
   line-height: 1.6;
   margin: 4px 0;
-  color: #e0e0e0;
+  color: black;
 }
 .social-icons {
-  color: white;
+  color: green;
   margin-top: 20px;
 }
 
 .title-icons h2 {
   font-size: 16px;
   margin-bottom: 10px;
-  color: white;
+  color: green;
 }
 
 .text-icons p {
   font-size: 12px;
-  color: #ccc;
+  color: black;
   margin-bottom: 15px;
   max-width: 300px;
 }
 
 .social-icons a {
-  color: white;
+  color: green;
   font-size: 18px;
   margin-right: 15px;
   transition: color 0.3s ease;
