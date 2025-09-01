@@ -125,8 +125,6 @@ button:active {
     background-color: hsl(120, 100%, 28%);
     display: flex;
     transition: all 0.3s ease-out;
-    
-    
     z-index: 100;
 }
 .navcard.show {
@@ -595,7 +593,7 @@ span {
 
 .technology {
     width: 80%;
-    margin: 2rem auto;
+    margin: 3rem auto;
 }
 .techSegment {
     display: grid;
@@ -610,7 +608,6 @@ span {
     box-shadow: -4px 0  hsl(120,100%,40%);
 }
 .techTextBox {
-    height: 300px;
     justify-content: center;
     align-items: center;
 }
@@ -799,6 +796,9 @@ footer p {
 }
 
 @media (max-width:780px) {
+    .page1Header {
+        height: 70vh;
+    }
     .p1HeadText {
         width:80%;
         margin: 0 auto;
@@ -808,9 +808,19 @@ footer p {
         margin-top: 1rem;
         font-size: 1.3em;
     }
+    .headimg {
+        display: none;
+    }
+    .phead {
+        display: none;
+    }
     /**/
     .navcard {
-        width: 50%;
+        position: fixed;
+        top: 0;
+        
+        width: 100%;
+        height: 7%;
     }
     /**/
     .card1p1 {
@@ -846,18 +856,22 @@ footer p {
         height: 250px;
         margin-bottom: 9rem;
     }
+    .thumbnailContainer {
+        bottom: 1rem;
+        padding: 1rem 1rem;
+        gap: 1rem;
+    }
     /**/
     .technology {
         width: 90%;
         margin: 0 auto;
     }
     .techSegment {
-        display: grid;
-        grid-template-rows: 1fr 0.5fr;
         display: flex;
         flex-direction: column-reverse;
         gap: 1rem;
         margin-bottom:3rem;
+        padding: 2rem;
     }
     .techSegment p {
         font-size: 13px;
@@ -872,8 +886,8 @@ footer p {
         line-height: 2rem;
     }
     .techImg1, .techImg2, .techImg3 {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
     .techsection {
         margin-bottom: 4rem;
