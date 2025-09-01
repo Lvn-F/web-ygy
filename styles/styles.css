@@ -182,10 +182,11 @@ a:hover {
     justify-content: start;
     
 
-    background-image: url(assets/greentech-head.jpg);
+    background-image: url(assets/greentech-head.png);
     background-position: center;
     background-size: cover;
-    height: 95vh;
+    height: 98vh;
+    margin-top: 1rem;
 }
 .p1HeadText {
     display: grid;
@@ -214,7 +215,7 @@ a:hover {
     height: 3px;
     width: 85%;
     background-color: hsl(120, 100%, 30%);
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 /**/
