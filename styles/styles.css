@@ -840,51 +840,18 @@ footer p {
         font-size: 1.1em;
         max-width: 600px;
     }
-    .innovationImg {
+    .newssImg {
         width: 100%;
         max-width: 500px;
         height: 250px;
         margin-bottom: 9rem;
     }
     /**/
-    .history {
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .boxhis {
-        flex-direction: column-reverse;
-    }
-    .textboxhis {
-        max-width: 90%;
-        align-items: center;
-
-    }
-    .imgboxhis {
-        width: 350px;
-        height: 350px;
-    }
-    /**/
-    .benefit {
-        width: 90%;
-    }
-    .benrow {
-        flex-direction: column;
-        align-items: center;
-        gap:1rem;
-        margin: 0 0 1rem 0;
-    }
-    .bencard {
-        max-width: 80%;
-        min-width: 70%;
-        padding: 1rem;
-    }
-    /**/
-    .teknology {
+    .technology {
         width: 90%;
         margin: 0 auto;
     }
-    .techsegment {
+    .techSegment {
         display: grid;
         grid-template-rows: 1fr 0.5fr;
         display: flex;
@@ -892,8 +859,20 @@ footer p {
         gap: 1rem;
         margin-bottom:3rem;
     }
-    .techpic {
-        width: 100%;
+    .techSegment p {
+        font-size: 13px;
+        word-spacing: 1.5px;
+        letter-spacing: 0.1px;
+        line-height: 1.5rem;
+        text-align: start;
+    }
+    .techSegment h2 {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+    }
+    .techImg1, .techImg2, .techImg3 {
+        width: 200px;
         height: 200px;
     }
     .techsection {
