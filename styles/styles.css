@@ -557,11 +557,12 @@ span {
 @media (max-width: 768px) {
   .box-card-benefit {
       grid-template-columns: repeat(2, 1fr); 
-      gap: 15px;
+      gap: 20px;
   }
 
   .card-items-benefit {
       padding: 15px 10px;
+      height: 250px;
   }
 
   .card-items-benefit img {
@@ -572,11 +573,11 @@ span {
     }
     
     .title-benefit h3 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .title-benefit p {
-        font-size: 13px;
+        font-size: 12px;
         padding: 0 10px;
         word-spacing: 1px; 
         letter-spacing: 0.1px; 
