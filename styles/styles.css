@@ -165,14 +165,11 @@ a:hover {
 }
 #white {
     color:hsl(120, 100%, 30%);
-    text-align: justify;
 }
 .page1Header {
     display: flex;
     align-items: center;
     justify-content: start;
-    
-
     background-image: url(assets/greentech-head.png);
     background-position: center;
     background-size: cover;
@@ -206,7 +203,9 @@ a:hover {
     width: 100%;
     background-color: hsl(120, 100%, 30%);
 }
-
+.mob {
+    display: none;
+}
 /**/
 
 .p1Sect1 {
@@ -795,6 +794,9 @@ footer p {
     .heh {
         margin-top: 4.5rem;
     }
+    .headh1 {
+        font-size: 2em;
+    }
     .page1Header {
         height: 70vh;
         top: 5rem;
@@ -803,10 +805,20 @@ footer p {
         width:80%;
         margin: 0 auto;
         text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     .p1HeadText h2 {
         margin-top: 1rem;
         font-size: 1.3em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .huh h1, .huh p {
+        text-align: center;
+    }
+    .mob {
+        display: contents;
     }
     .headimg {
         display: none;
