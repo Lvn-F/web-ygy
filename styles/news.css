@@ -89,6 +89,15 @@
     border-radius: 4px;
     margin-bottom: 3rem;
 }
+.newssimgg {
+    height: 500px;
+    width: 100%;
+    background-image: url(assets/test.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+}
 .newsContent p, .newsContent li {
     line-height: 1.9rem;
     font-weight: 480;
@@ -101,6 +110,9 @@
 }
 @media (max-width:780px) {
     .news-head {
+        height: 300px;
+    }
+    .newssimgg {
         height: 300px;
     }
 }

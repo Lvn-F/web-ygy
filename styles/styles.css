@@ -155,6 +155,9 @@ button:active {
 a:hover {
     
 }
+.navback, .navbutton {
+    opacity: 0;
+}
 /**/
 
 #whitecolor {
@@ -843,6 +846,9 @@ footer p {
         margin-top: 5rem;
         align-items: start;
     }
+    .navbutton, .navback {
+        opacity: 1;
+    }
     /**/
     .card1p1 {
         flex-direction: column-reverse;
@@ -855,6 +861,9 @@ footer p {
         flex-direction: column;
     }
     /**/
+    .card1p1 {
+        width: 95%;
+    }
     .p1cardcontainer {
         flex-direction: column;
     }
