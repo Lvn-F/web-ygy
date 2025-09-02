@@ -177,7 +177,6 @@ a:hover {
     background-position: center;
     background-size: cover;
     height: 98vh;
-    margin-top: 1rem;
 }
 .p1HeadText {
     display: grid;
@@ -204,9 +203,8 @@ a:hover {
 }
 .thinLine {
     height: 3px;
-    width: 85%;
+    width: 100%;
     background-color: hsl(120, 100%, 30%);
-    margin: 2rem auto;
 }
 
 /**/
@@ -789,9 +787,12 @@ footer p {
 }
 
 @media (max-width:780px) {
+    .heh {
+        margin-top: 4.5rem;
+    }
     .page1Header {
         height: 70vh;
-        margin-top: 5rem;
+        top: 5rem;
     }
     .p1HeadText {
         width:80%;
@@ -856,8 +857,8 @@ footer p {
     .newssImg {
         width: 100%;
         max-width: 500px;
-        height: 250px;
-        margin-bottom: 9rem;
+        height: 200px;
+        margin-bottom: 5rem;
     }
     .thumbnailContainer {
         bottom: 1rem;
