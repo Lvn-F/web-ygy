@@ -37,7 +37,18 @@ thumbnails.forEach((Thumbnail, index) => {
 const nav = document.querySelector('.navbutton');
 const navback = document.querySelector('.navback');
 const navCards = document.querySelectorAll('.navcard');
-
+nav.addEventListener('click', () => {
+    navCards.forEach(navcard => {
+        navcard.classList.add('show');
+        navcard.classList.remove('hidden');
+    });
+});
+navback.addEventListener('click', () => {
+    navCards.forEach(navcard => {
+        navcard.classList.remove('show');
+        navcard.classList.add('hidden');
+    });
+});
 
 const slidebtn = document.querySelectorAll('.slideButton');
 
@@ -82,3 +93,4 @@ const pengamatTechnology = new IntersectionObserver(daftarElemen => {
 }, { threshold: 0.3 }); 
 
 teksTechnology.forEach(teks => pengamatTechnology.observe(teks));
+

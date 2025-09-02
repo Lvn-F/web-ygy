@@ -79,10 +79,11 @@ button:active {
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
-
     transition: all 0.3s ease-out;
-
     z-index: 5;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
 }
 .navbutton:hover {
     background-color: hsl(120, 100%, 30%);
@@ -100,11 +101,10 @@ button:active {
     width: 50px;
     height: 50px;
     background-color: hsl(120, 0%, 20%);
-    top:5%;
-    right: 10%;
+    top:10px;
+    left: 10px;
     position: absolute;
     border-radius: 50%;
-
     transition: all 0.3s ease-out;
 
 }
@@ -119,7 +119,6 @@ button:active {
 .navcard {
     position: fixed;
     top: 0;
-    
     width: 100%;
     height: 10%;
     background-color: hsl(120, 100%, 28%);
@@ -130,18 +129,13 @@ button:active {
 .navcard.show {
     transform: translateX(0);
 }
-
-
-
 .navlist {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: end;
-    
     margin: 0 auto;
     width: 100%;
-    
 }
 .navitem {
     list-style: none;
@@ -161,7 +155,6 @@ button:active {
 a:hover {
     
 }
-
 /**/
 
 #whitecolor {
@@ -798,6 +791,7 @@ footer p {
 @media (max-width:780px) {
     .page1Header {
         height: 70vh;
+        margin-top: 5rem;
     }
     .p1HeadText {
         width:80%;
@@ -819,8 +813,17 @@ footer p {
         position: fixed;
         top: 0;
         
-        width: 100%;
-        height: 7%;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-100%);
+    }
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        align-items: start;
     }
     /**/
     .card1p1 {
