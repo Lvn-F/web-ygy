@@ -564,6 +564,10 @@ span {
       padding: 15px 10px;
       height: 250px;
   }
+  .card-items-benefit p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
 
   .card-items-benefit img {
       width: 60px;
