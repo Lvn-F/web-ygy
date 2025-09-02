@@ -423,13 +423,18 @@ span {
 }
 .slideButton {
     padding: 0.8rem 1.6rem;
-    background-color: hsl(120, 100%, 20%);
+    background-color: hsl(120, 100%, 28%);
     border-radius: 8px;
     box-shadow: 0 0 16px hsla(0,0%,10%, 0.9);
     transition: all 0.3s ease;
 }
+.slideButton a {
+    text-decoration: none;
+    color: hsl(0,0%,100%);
+    font-weight: 500;
+}
 .slideButton:hover {
-    scale: 1.09;
+    scale: 1.05;
     background-color: hsl(120, 100%, 30%);
 }
 .slideButton:active {

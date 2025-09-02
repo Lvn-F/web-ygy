@@ -99,3 +99,8 @@
 .newsContent li {
     margin-left: 2rem;
 }
+@media (max-width:780px) {
+    .news-head {
+        height: 300px;
+    }
+}
