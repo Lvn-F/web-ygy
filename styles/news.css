@@ -83,16 +83,53 @@
 .news-head {
     height: 500px;
     width: 100%;
-    background-image: url(assets/test2.jpeg);
+    background-image: url(assets/test.png);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
     margin-bottom: 3rem;
 }
+.gridImg {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+}
+.gridRow1, .gridRow2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
 .newssimgg {
-    height: 500px;
-    width: 100%;
+    height: 400px;
+    width: 550px;
     background-image: url(assets/test.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    
+}
+.newssimgg2 {
+    height: 400px;
+    width: 550px;
+    background-image: url(assets/kegiatan1.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+
+}
+.newssimgg3 {
+    height: 400px;
+    width: 550px;
+    background-image: url(assets/kegiatan2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+
+}
+.newssimgg4 {
+    height: 400px;
+    width: 550px;
+    background-image: url(assets/kegiatan3.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 4px;
@@ -114,5 +151,13 @@
     }
     .newssimgg {
         height: 300px;
+    }
+    .newssimgg, .newssimgg2, .newssimgg3, .newssimgg4 {
+        height: 250px;
+        width: 320px;
+    }
+    .gridRow1, .gridRow2 {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
