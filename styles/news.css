@@ -94,52 +94,7 @@
     border-radius: 4px;
     margin-bottom: 3rem;
 }
-.gridImg {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin: 0 auto;
-}
-.gridRow1, .gridRow2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-}
-.newssimgg {
-    height: 400px;
-    width: 550px;
-    background-image: url(assets/test.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-    
-}
-.newssimgg2 {
-    height: 400px;
-    width: 550px;
-    background-image: url(assets/kegiatan1.jpeg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
 
-}
-.newssimgg3 {
-    height: 400px;
-    width: 550px;
-    background-image: url(assets/kegiatan2.jpeg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-
-}
-.newssimgg4 {
-    height: 400px;
-    width: 550px;
-    background-image: url(assets/kegiatan3.jpeg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-    margin-bottom: 3rem;
-}
 .newsContent p, .newsContent li {
     line-height: 1.9rem;
     font-weight: 480;
@@ -150,6 +105,7 @@
 .newsContent li {
     margin-left: 2rem;
 }
+
 .nslideContainer {
     width: 900px;
     margin: auto;
@@ -198,15 +154,14 @@
     .news-head {
         height: 300px;
     }
-    .newssimgg {
-        height: 300px;
+    .nslideContainer {
+        width: 90%;
     }
-    .newssimgg, .newssimgg2, .newssimgg3, .newssimgg4 {
+    .nslide {
         height: 250px;
-        width: 320px;
     }
-    .gridRow1, .gridRow2 {
-        display: grid;
-        grid-template-columns: 1fr;
+    #next, #prev {
+        width: 25px;
+        height: 25px;
     }
 }
