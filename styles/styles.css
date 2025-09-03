@@ -264,14 +264,18 @@ span {
 /**/
 
 /* Slide for news */
-
+.newsback {
+    background-color: hsl(0,0%,90%);
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
 .newssContainer {
     position: relative;
-    width: 90%;
+    width: 80%;
     height: 85vh;
     overflow: hidden;
     border-radius: 16px;
-    margin: 3rem auto;
+    margin: 1rem auto;
 }
 .slideNewss {
     position: absolute;
@@ -446,7 +450,6 @@ span {
     color: hsl(120, 100%, 20%);
     font-size: 2.5em;
     text-align: center;
-    margin-top: 8rem;
 }
 
 
@@ -596,7 +599,11 @@ span {
 
 .technology {
     width: 80%;
-    margin: 3rem auto;
+    margin: 7rem auto;
+}
+.technology h2 {
+    color: hsl(120, 100%, 20%);
+    text-align: center;
 }
 .techSegment {
     display: grid;
