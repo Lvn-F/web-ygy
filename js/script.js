@@ -94,3 +94,35 @@ const pengamatTechnology = new IntersectionObserver(daftarElemen => {
 
 teksTechnology.forEach(teks => pengamatTechnology.observe(teks));
 
+const nslide = document.querySelector('.nslide');
+const nslideImg = document.querySelectorAll('.nslide img');
+const Prev = document.querySelector('#prev');
+const Next = document.querySelector('#next');
+let counter = 1;
+const size = nslideImg[0].clientWidth;
+nslide.style.transform = 'translateX(' +  (-size * counter) + 'px)';
+Next.addEventListener('click', ()=> {
+    if (counter >= nslideImg.length -1) return;
+    nslide.style.transition = "transform 0.3s ease-in-out";
+    counter++;
+    nslide.style.transform = 'translateX(' +  (-size * counter) + 'px)';
+});
+Prev.addEventListener('click', ()=> {
+    if (counter <= 0) return;
+    nslide.style.transition = "transform 0.3s ease-in-out";
+    counter--;
+    nslide.style.transform = 'translateX(' +  (-size * counter) + 'px)';
+});
+nslide.addEventListener('transitionend', ()=> {
+    if (nslideImg[counter].id === 'lastclone') {
+        nslide.style.transition ="none";
+        counter = nslideImg.length -2;
+        nslide.style.transform = 'translateX(' +  (-size * counter) + 'px)';
+    }
+    if (nslideImg[counter].id === 'firstclone') {
+        nslide.style.transition ="none";
+        counter = nslideImg.length - counter;
+        nslide.style.transform = 'translateX(' +  (-size * counter) + 'px)';
+    }
+});
+

@@ -150,6 +150,47 @@
 .newsContent li {
     margin-left: 2rem;
 }
+.nslideContainer {
+    width: 900px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin: 4rem auto;
+}
+.nslide {
+    display: flex;
+    width: 100%;
+    height: 450px;
+}
+.nslide img {
+    object-fit: cover;
+}
+#prev {
+    cursor: pointer;
+    background-image: url(assets/left.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    top: 50%;
+    left:5%;
+    cursor: pointer;
+}
+#next {
+    cursor: pointer;
+    background-image: url(assets/right.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    top: 50%;
+    right:5%;
+    cursor: pointer;
+}
 @media (max-width:780px) {
     .newsh1 {
         font-size: 1.5em;
