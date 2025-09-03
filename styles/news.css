@@ -1,5 +1,10 @@
-.newsMain {
-    
+.newsh1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(120, 100%, 22%);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 .navSegmentss {
     height: 8%;
@@ -146,6 +151,9 @@
     margin-left: 2rem;
 }
 @media (max-width:780px) {
+    .newsh1 {
+        font-size: 1.5em;
+    }
     .news-head {
         height: 300px;
     }
