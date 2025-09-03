@@ -120,6 +120,7 @@
 }
 .nslide img {
     object-fit: cover;
+    object-position: center;
 }
 #prev {
     cursor: pointer;

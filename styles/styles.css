@@ -101,12 +101,14 @@ button:active {
     width: 50px;
     height: 50px;
     background-color: hsl(120, 0%, 20%);
+    background-image: url(assets/back.png);
+    background-size: cover;
+    background-position: center;
     top:10px;
     left: 10px;
     position: absolute;
     border-radius: 50%;
     transition: all 0.3s ease-out;
-
 }
 .navback:hover {
     background-color: hsl(120, 100%, 30%);
@@ -312,7 +314,7 @@ span {
     z-index: 1;
 }
 .slideNewss:nth-child(1)::before {
-    background-image: url('assets/test2.jpeg');
+    background-image: url('assets/test2.jpg');
 }
 
 .slideNewss:nth-child(2)::before {
@@ -590,6 +592,23 @@ span {
         letter-spacing: 0.1px; 
     }
 
+}
+@media (max-width: 420px) {
+    .box-card-benefit {
+        grid-template-columns: 1fr;
+    }
+
+    .card-items-benefit {
+        padding: 15px 10px;
+        height: auto;
+    }
+
+    .title-benefit p {
+        font-size: 12px;
+        padding: 0 10px;
+        word-spacing: 1px;
+        letter-spacing: 0.1px;
+    }
 }
 
 /* BENEFIT END CSS */
