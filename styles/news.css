@@ -79,6 +79,9 @@
     right:5%;
     cursor: pointer;
 }
+p {
+    text-align: justify;
+}
 @media (max-width:780px) {
     .newsh1 {
         font-size: 1.2em;
